@@ -2,33 +2,75 @@
 <html lang="en">
 <head>
     <style>
-        h1
+         #upperh
         {
-            color: lemonchiffon;
+            color:indigo;
+        }
+        #lowerh
+        { 
+            
+            color:rgba(255,0,0,1);
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <style>
+   <!-- <style>
+      
         body {
-          background-image: url('pic.jpg');
+          background-image: url('E:/Vikas/wal/action.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
         }
+      
+      
+        </style> -->
+        <style>
+          .container  {
+          border: 5px solid red;  
+          }
+        .button a{
+          border-radius: 15px 15px 15px 15px;
+          display: block;
+          width: 25%;
+          text-align: center;
+          background-color: greenyellow;
+          margin-top:10px ; 
+          text-decoration: none;
+          padding: 5px;
+          border: 0px solid green;
+        }
+        *{
+            margin: 0px;
+        }
         </style>
-    <h1 > vikas yadav </h1>
+</head>
+<body>
+
+  <table style="padding: 0.5%;" border="0" width="100%" height="70" > 
+    <tr> 
+      <td style="background-color: aqua;" align="center" width="16.66%"> <button style="border:0; background-color: aqua;" type="button"> <a title="google"  href="https://www.google.com/">HOME</a></button>  </td>
+      <td style="background-color: aqua;" align="center" width="16.66%"> Practical 1 </td>
+      <td style="background-color: aqua; " align="center" width="16.66%"> Practical 2 </td>
+      <td style="background-color: aqua;" align="center" width="16.66%"> Practical 3</td>
+      <td style="background-color: aqua;" align="center" width="16.66%"> Practical 4 </td>
+      <td style="background-color: aqua;" align="center" width="16.66%"> Practical 5 </td>
+    </tr>
+
+  </table> 
+
+    <h1 id="upperh" align=center > vikas yadav </h1>
     
-    <h1> vikas yadav </h1>
+    <h1 style="color:blanchedalmond; text-align: right;"> vikas yadav </h1>
 
    <a target="_blank" href="https://www.youtube.com/watch?v=qRClKxzJX9A"> 
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 20%;" 
-    src="image\pic.jpg"  alt="" title="ocean">
+    <img src="image\pic.jpg"  alt="" title="ocean" 
+    style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 250px;">
     </a>
-    <h1 style="text-align: center; color: lavender;">New image</h1>
+    <!-- separation of image -->
+    
+    <h1 align=center style="color: lawngreen;" >New image</h1>
 
     <img src="image\planet.jpg" 
     style="display: block; margin-right: auto; margin-left: auto; width: 400px; height: 250px;" 
@@ -46,8 +88,36 @@
        target="_blank" title="mars" alt="">
     </map>
 
+    <img  src="image/logo.png" 
+    style="display: block; margin-right: auto; margin-left: auto; width: 400px; height: 250px;" 
+    alt=""
+    usemap="#logo"
+    >
+    <map name="logo">
+      <area shape="poly" coords="28,33,162,31,153,107,94,116,39,105" href="" alt="" title="html" target="_blank">
+     
+      <area shape="poly" coords="238,32,372,32,358,105,303,114,247,106" href="" alt="" title="JS" target="_blank">
+     
+      <area shape="poly" coords="25,155,165,154,151,228,96,239,39,229" href="" alt="" title="css" target="_blank">
+     
+      <area shape="poly" coords="246,155,356,154,372,163,372,220,360,227,247,228,235,222,234,165" href="" alt="" title="bootstrap" target="_blank">
+     
+
+    </map>
     
+    <button type="button">Click Me!</button>
 
+    <div class="container">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi facilis, itaque aliquid quas corrupti quis asperiores ut? Blanditiis excepturi maiores, quaerat vitae temporibus impedit modi illo neque ratione. Sequi hic tempora praesentium reprehenderit expedita nihil molestiae maiores sit velit possimus libero similique doloremque accusamus impedit provident voluptas, ullam nam? Soluta?
 
+      </p>
+    </div>
+<br>
+    <div class="button">
+      <a href="#" title="click"> click</a>
+    </div>
+    <br><br>
+    <h1 id="lowerh">hello vikas</h1>
+    <br><br>
 </body>
 </html>

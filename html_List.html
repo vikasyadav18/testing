@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML List</title>
+    <style>
+        #first
+        {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto; 
+            border:0px red solid;
+            width: 80%;
+            padding: 6px;
+            border-radius: 15px;
+            background-color:chartreuse; 
+
+        }
+        firsr::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+      
+        #first li a
+        {
+            display: block;
+
+            color:white;
+            text-decoration: none;
+        }
+
+      #first li 
+        {
+            
+            padding: 5px;
+            width: 13%;
+            display: inline-block;
+            /* display: flex; */
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border:0px red solid;
+            border-radius: 5px;
+            
+            margin-left: auto;
+            margin-right: auto;
+          
+           
+           
+            
+            background-color: rgb(53, 53, 167);
+    
+            list-style-image: url("image/bullet.png");
+        }
+        #Unordered
+        {
+            list-style-type:square;
+        }
+
+        ul
+        {
+            list-style-image: url("image/bullet.png");
+        }
+ 
+       
+    </style>
+
+</head>
+<body>
+<!--
+1.ordered List
+2.unordered List
+3.description List 
+-->
+
+    <h1>ordered list</h1>
+    <ol id="first" >
+        <li> <a href="#"> vikas</a></li>
+        <li><a href="#"> yadav</a></li>
+        <li> <a href="#"> vikas</a></li>
+        <li><a href="#"> yadav</a></li>
+        <li> <a href="#"> vikas</a></li>
+        <li><a href="#"> yadav</a></li>
+        
+    </ol>
+
+    <h1>ordered list</h1>
+    <ol>
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+    </ol>
+    
+    <h1>ordered list</h1>
+    <ol start="5">
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+    </ol>
+
+
+    
+    <h1>Unordered List</h1>
+    <ul id="Unordered">
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+        <li>vikas</li>
+        <li>yadav</li>
+    </ul>
+</body>
+</html>

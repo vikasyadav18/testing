@@ -44,6 +44,45 @@
         *{
             margin: 0px;
         }
+
+        #image::after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #image
+        {
+         
+          padding: 10px;
+          display:block;
+          height: 200px;
+          width: 100%;
+          border: solid red;
+         
+        }
+        #img1
+        {
+          background-color: rgb(17, 212, 212);
+          margin-right: 20px;
+          float: left;
+          border: red solid;
+          display: block;
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+        }
+
+        #img2
+        {
+        background-color:springgreen;
+        border-radius: 50%;
+          float: left;
+          border: red solid;
+          display: block;
+          height: 200px;
+          width: 200px;
+
+        }
         </style>
 </head>
 <body>
@@ -119,5 +158,16 @@
     <br><br>
     <h1 id="lowerh">hello vikas</h1>
     <br><br>
+
+    <h1>rounded image</h1>
+    <div id="image">
+      <div id="img1"></div>
+     
+      <div id="img2"></div>
+     
+      
+      
+    </div>
+<br><br>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsiveness</title>
     <style>
+
         *{
             padding: 0px;
             margin:0px;
@@ -18,14 +19,27 @@
         padding: 15px;
         
         }
-        #container::after{
+                    
+/* 
+1. 1201 or ----
+2. 1025 to 1200
+3. 769 to 1024
+4. 481 to 768
+5. 0 to 480 
+*/
+
+        /* 1st breakpoint */
+
+        @media (min-width: 1201px){
+        
+            #container::after{
             content: '';
             display: block;
             clear: both;
         }
 
-        #header
-        {
+            #header
+            {
             border-radius: 5px;
             display: block;
             text-align: center;
@@ -36,19 +50,19 @@
             padding-top: 10px;
             padding-bottom: 10px;
             margin-bottom: 15px;
-        }
+            }
 
         #left-box
-        {
+            {
             width: 20%;
             border:0px solid green;
             height: 515px;
             float: left;
             
-        }
+            }
 
         #navigation
-        {
+            {
             border-radius: 5px;
             margin-bottom: 10px;
 
@@ -63,9 +77,9 @@
            
             color: white;
             border-radius: 5px;
-        }
+            }
         #news-update
-        {
+            {
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -79,10 +93,10 @@
             color: white;
             border-radius: 5px;
 
-        }
+            }
 
         #right-box
-        {
+            {
             border-radius: 5px;
             /* center to the div */
             display: flex;
@@ -96,9 +110,9 @@
             width: 78%;
             height: 515px;
             margin-bottom: 10px;
-        }
+            }
         #footer
-        {
+            {
             background-color: rgb(211, 199, 199);
             color: white;
             display: block;
@@ -110,29 +124,477 @@
             margin-top: 10px;
             clear: both;
             border:0px solid chartreuse;
+            }
+      
+
         }
-        .image
-        {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: skyblue;
-            width: 100%;
-            height: 500px;
-            margin-bottom: 15px;
-        }
-        .image img
-        {
-           
+        /* 2nd breakpoint */
+
+        @media (min-width: 1050px) and (max-width: 1201px){
+        
+            #container::after{
+            content: '';
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            height: 500px;
-            border-radius: 5000px;
-            
+            clear: both;
         }
 
-    </style>
+            #header
+            {
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            color: white;
+            background-color: rgb(228, 228, 228);
+            border: 0px solid pink;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            }
+
+        #left-box
+            {
+
+            display: flex;
+            flex-direction: column;    
+            width: 20%;
+            border:0px solid green;
+            height: 515px;
+            float: left;
+            
+            }
+
+        #navigation
+            {
+                order:2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 0px solid yellow;
+            width: 100%;
+            height: 300px;
+            background-color: indigo;
+           
+            color: white;
+            border-radius: 5px;
+            }
+        #news-update
+            {
+                order: 1;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 200px;
+            border: 0px solid yellow;
+        
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+
+            }
+
+        #right-box
+            {
+            border-radius: 5px;
+            /* center to the div */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            float: right;
+            border:0px solid blue;
+            background-color: orange;
+            width: 78%;
+            height: 515px;
+            margin-bottom: 10px;
+            }
+        #footer
+            {
+            background-color: rgb(211, 199, 199);
+            color: white;
+            display: block;
+            text-align: center;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            clear: both;
+            border:0px solid chartreuse;
+            }
+      
+
+        }
+
+          /* 3rd breakpoint */
+
+          @media (min-width: 769px) and (max-width:1050px){
+        
+        #container::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+        #header
+        {
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: rgb(228, 228, 228);
+        border: 0px solid pink;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        }
+
+    #left-box
+        {
+        width: 20%;
+        border:0px solid green;
+        height: 515px;
+        float: left;
+        
+        }
+
+    #navigation
+        {
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0px solid yellow;
+        width: 100%;
+        height: 515px;
+        background-color: indigo;
+       
+        color: white;
+        border-radius: 5px;
+        }
+    #news-update
+        {
+
+        border-radius: 5px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 200px;
+        border: 0px solid yellow;
+    
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+
+        }
+
+    #right-box
+        {
+        border-radius: 5px;
+        /* center to the div */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        float: right;
+        border:0px solid blue;
+        background-color: orange;
+        width: 78%;
+        height: 515px;
+        margin-bottom: 10px;
+        }
+    #footer
+        {
+        background-color: rgb(211, 199, 199);
+        color: white;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        clear: both;
+        border:0px solid chartreuse;
+        }
+  
+
+    }
+
+
+      /* 4th breakpoint */
+
+      @media (min-width: 481px) and (max-width: 768px){
+       
+        #container:after
+        {
+        content: '';
+        display: block;
+        clear: both;
+        }
+
+        #small-Container
+        {
+            border: 5px solid red;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        #header
+        {
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: rgb(228, 228, 228);
+        border: 0px solid pink;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        }
+
+        
+        #left-box:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    #left-box
+        {
+            order: 2;
+        width: 100%;
+        border:0px solid green;
+        
+       
+        
+        }
+
+        #right-box
+        {
+            
+            order: 1;
+        border-radius: 5px;
+        /* center to the div */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+       
+        border:0px solid blue;
+        background-color: orange;
+        width: 100%;
+        height: 515px;
+        margin-bottom: 10px;
+        }
+       
+    #navigation
+        {
+            margin-left: 10px;
+           float: left;
+           padding-top:10px;
+            padding-bottom: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0px solid yellow;
+        width: 48%;
+        height: 50px;
+        background-color: indigo;
+       
+        color: white;
+        border-radius: 5px;
+        }
+    #news-update
+        {
+            margin-right: 10px;
+            padding-top:10px;
+            padding-bottom: 10px;
+
+          float: right;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 48%;
+        height: 50px;
+        border: 0px solid yellow;
+    
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+
+        }
+
+    
+    #footer
+        {
+        background-color: rgb(25, 224, 238);
+        color: white;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        clear: both;
+        border:0px solid chartreuse;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        }
+  
+
+    }
+      /* 5th breakpoint */
+
+      @media (min-width: 0px) and (max-width: 480px){
+       
+        #container:after
+        {
+        content: '';
+        display: block;
+        clear: both;
+        }
+
+        #small-Container
+        {
+            border: 5px solid red;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        #header
+        {
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: rgb(228, 228, 228);
+        border: 0px solid pink;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+
+        }
+
+        
+        #left-box:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    #left-box
+        {
+            order: 2;
+        width: 100%;
+        border:0px solid green;
+        
+       
+        
+        }
+
+        #right-box
+        {
+            
+            order: 1;
+        border-radius: 5px;
+        /* center to the div */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+       
+        border:0px solid blue;
+        background-color: orange;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        }
+       
+    #navigation
+        {
+           
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0px solid yellow;
+        width: 100%;
+        height: 50px;
+        background-color: indigo;
+       
+        color: white;
+        border-radius: 5px;
+        }
+    #news-update
+        {
+         
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 50px;
+        border: 0px solid yellow;
+    
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+
+        }
+
+    
+    #footer
+        {
+        background-color: rgb(211, 199, 199);
+        color: white;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        clear: both;
+        border:0px solid chartreuse;
+        }
+  
+
+    }
+    
+</style>
 
 
 </head>
@@ -141,27 +603,18 @@
 <div id="container">
 
     <div id="header">Header</div>
-
-    <div id="left-box">
-
-        <div id="navigation">Navigation</div>
-        <div id="news-update">News Update</div>
+    <div id="small-Container">
+        <div id="left-box">
+            <div id="navigation">Navigation</div>
+            <div id="news-update">News Update</div>
+        </div>
+        <div id="right-box">Main Content</div>
     </div>
-
-    <div id="right-box">Main Content</div>
-
     <div id="footer">Footer</div>
-
 </div>
 
-<h2 style="margin-top: 10px; border-radius: 5px; text-align: center; color: white; background-color: yellowgreen;">Image galary</h2>
+
 <br><br>
-
-<div class="image">
-    <img src="C:\Users\VIKAS YADAV\Desktop\testing\image\planet.jpg" alt="">
-
-</div>
-
 
 </body>
 </html>

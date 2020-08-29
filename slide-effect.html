@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide effect</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+         container::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #container
+        {
+            max-width: 1500px;
+            display: block;
+            border:1px black solid;
+            
+
+        }
+        header::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #header
+        {
+            background-color: grey;
+            border:0px bisque solid;
+            display: block;
+            height: 45px;
+        }
+        #header h2
+        {
+            color: white;
+            margin-left: 10px;
+            line-height: 40px;
+            float: left;
+        }
+        list::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #list
+        {
+            margin-right: 20px;
+            height: 40px;
+           
+            display: block;
+            float: right;
+            
+            border:0px springgreen solid;
+        }
+       
+
+        #list li
+        {
+            border:0px teal solid;
+            
+            display: inline;
+            list-style: none;
+            margin-left: 25px;
+            line-height: 40px;
+
+        }
+        #list li a
+        {
+            font-size: 15px;
+            color: red;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            
+            text-decoration: none;
+        }
+        .show-btn,.hide-btn
+        {
+            font-size: 25px;
+            color: white;
+            line-height: 40px;
+            float: right;
+            display: none;
+            margin-right: 10px;
+        }
+        #chk
+        {
+            position: absolute;
+            z-index: -10;
+        }
+     
+  /* breakpoint-2 */
+        @media(max-width: 800px)
+        {
+            .show-btn,.hide-btn
+            {
+                display: block;
+            }
+            #list
+            {
+                position: fixed;
+                top: 0px;
+                left:-110%;
+                width: 100%;
+                height: 100vh;
+                background-color:rgb(34, 238, 238);
+                text-align: center;
+                padding: 80px 0px;
+                transition: .7s;
+                line-height: normal;
+
+            }
+            #chk:checked ~ #list
+            {
+                left: 0;
+            }
+            #list li
+            {
+                display: block;
+            }
+            .hide-btn
+            {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+<div id="container">
+    
+<div id="header">
+    <h2>V/S</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-btn">
+        <!-- <img src="image/bullet.png" alt=""> -->
+        <i class="fa fa-bars"></i> 
+    </label>
+    <ul id="list">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a> </li>
+        <li><a href="#"><i class="fa fa-book"></i> about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">help</a></li>
+        <li><a href="#">follow</a></li>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times"></i>
+        </label>
+    </ul>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -60,7 +60,7 @@
             width: 100%;
             /* position: fixed; */
            background-color:black;
-            border:1px red solid;
+            border:0px red solid;
             height: 50px;
             
             
@@ -89,20 +89,14 @@
         }
         #main p
         {
-            width:80%;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            transition: 1s;
-            text-align: justify;
+           text-align: justify;
         }
         #main img
         {
             width: 100%;
-            height: 500px;
+            max-width: 800px;
             transition: 1s;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             display: block;
 
         }
@@ -114,12 +108,13 @@
        }
     #header
     {
+        top: 50px;
         background-color: black;
         display: block;
         border: 0px solid rgb(73, 21, 194);
-        position: fixed;
+        position: absolute;
         transition: 1s;
-        top: 0;
+       
         left:-100%;
         width: 20%;
         height: 100vh;
@@ -161,6 +156,10 @@
             display: block;
             margin-right: 10px;
         }
+        .hide-btn
+        {
+            visibility: hidden;
+        }
     #list li a:hover
     {
         border-left: 5px solid white;
@@ -170,29 +169,25 @@
     #chk
     {
         left: 400px;
-       visibility: hidden;
+        visibility: hidden;
         position: absolute;
     }
 
-    #chk:checked ~ .show-btn
+    #chk:checked ~ #logo .show-btn
     {
         visibility: hidden;
+    }
+    #chk:checked ~ #logo .hide-btn
+    {
+        visibility: visible;
     }
     #chk:checked ~ #header
             {
                 /* transition: .7s; */
-                left: 0;
+                left: 0%;
             }
 
-    #chk:checked ~ #logo
-    {
-        display: flex;
-       
-        width: 80%;
-        float: right;
-        transition: 1s;
-        /* margin-left: 100px; */
-    }
+    
     #chk:checked ~ #main
     {
        display: flex;
@@ -200,8 +195,9 @@
         width: 80%;
         transition: 1s;
     }
-    #chi:checked ~ #main img
+    /* #chi:checked ~ #container #main img
         {
+            border: red solid;
             width:900px;
             height: 500px;
             transition: 1s;
@@ -210,7 +206,7 @@
             display: block;
             clear: both;
 
-        }
+        } */
 
         #chi:checked ~  #space
        {
@@ -259,6 +255,7 @@
             <div id="main"> 
 
                 <img src="image/desktop.jpg" alt="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum nam, voluptate deserunt pariatur assumenda necessitatibus, odio animi ipsum mollitia cumque fugiat natus id impedit officiis quidem obcaecati rem perspiciatis dolore molestias atque quas optio ipsam fugit. Reiciendis quasi enim aperiam ut quae consequuntur perferendis quisquam qui explicabo nemo a perspiciatis dolorem autem officia dolorum asperiores magnam eum molestias velit, nihil eius blanditiis ipsum nam vitae. Iure quia quod quas praesentium velit ipsam perferendis beatae qui deserunt. Distinctio fuga architecto quod ullam officiis neque quae, labore ea odio sapiente error magnam ipsum. Voluptates illum similique consequatur qui id rem maiores, blanditiis ab nobis voluptatem dignissimos soluta omnis dolor distinctio iure deleniti aspernatur fuga temporibus, nam reiciendis porro. Omnis deleniti veritatis sunt. Id accusamus reiciendis cum minus fugit distinctio! Necessitatibus, atque magnam? Natus est dolorum alias dolores aperiam tenetur, beatae magni fuga quam voluptatibus enim dolorem amet maiores quo inventore, dicta architecto quibusdam modi optio quidem rem reprehenderit corporis distinctio quisquam. Aliquid nulla quibusdam saepe sapiente vel deleniti repudiandae commodi quas aliquam iste, recusandae officia, nam suscipit odio illo aperiam eveniet! Recusandae explicabo, dolorem est aliquam laboriosam odit facilis similique iste obcaecati saepe, delectus beatae! Ipsa, officiis est repellat fugit labore libero esse culpa repellendus unde quod consectetur excepturi laborum dolorem similique tenetur ipsum ex, dicta, sapiente aliquam adipisci earum. Illo unde quisquam voluptatibus voluptate a laudantium ipsa molestias quis iste suscipit cupiditate quas quidem quibusdam aliquid, facilis nam beatae omnis repellat modi animi totam voluptatum error. Nam at repellendus vero vel eaque asperiores! Eaque sapiente porro facere, reprehenderit repudiandae, ea similique laboriosam fugiat voluptatum ex iste minus odit illum sed numquam? Ea adipisci, libero quis commodi delectus iure culpa explicabo. Quidem magnam, earum voluptatibus libero blanditiis maiores dicta totam quae vitae qui et eveniet excepturi molestias autem mollitia quos iure expedita iusto esse quod, aperiam nobis minima repellat. Officiis quisquam, et, esse aliquam asperiores molestias sed perferendis officia consectetur tempora optio doloremque ex cupiditate quidem exercitationem explicabo! Saepe iusto at ipsam iure dolores corrupti voluptatibus, dignissimos voluptatem, magnam sit perspiciatis libero blanditiis doloribus recusandae voluptas dolor atque consectetur minima ratione adipisci inventore ab ducimus. Ipsa, veritatis! Perferendis aperiam tenetur ducimus nesciunt, corrupti dolor dolores obcaecati, dolorem nam quidem magnam! Amet eveniet illum repellat atque deserunt quaerat voluptatibus voluptatem rem esse culpa a ad ipsam ab non exercitationem, labore deleniti optio, iure provident. Dolore libero eveniet, accusantium saepe ut exercitationem quidem, labore necessitatibus ipsam dignissimos asperiores accusamus et odio a consectetur quis eaque quod nulla eligendi, fugit iste dolores quos? Iste ab porro cupiditate perspiciatis consequuntur exercitationem fugiat ipsam quibusdam modi labore culpa, voluptate sequi est nisi dolorem nulla neque corrupti fugit ipsa quisquam. Autem quis in consequuntur placeat, ab ratione enim earum consequatur aliquid velit. Quia, earum labore error odio ipsa quas accusantium commodi non temporibus maiores ab, quis consectetur est at laborum ullam dignissimos eius dolorum expedita explicabo nihil alias. Incidunt quaerat deserunt iusto tempore numquam iste est molestias laudantium ea! Atque, facilis? Totam deserunt adipisci impedit neque molestias!
                 <br>
                 
             </div>

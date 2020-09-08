@@ -31,14 +31,15 @@
           border: 5px solid red;  
           }
         .button a{
-          border-radius: 15px 15px 15px 15px;
-          display: block;
+          border-radius: 15px;
+          
           width: 25%;
+          padding: 10px 35px;
           text-align: center;
           background-color: greenyellow;
           margin-top:10px ; 
           text-decoration: none;
-          padding: 5px;
+        
           border: 0px solid green;
         }
         *{
@@ -82,6 +83,28 @@
           height: 200px;
           width: 200px;
 
+        }
+        .parent
+        {
+          display: flex;
+          width: 100%;
+          height: 200px;
+          background-color:#dde1e7;
+
+        }
+        .shade
+        {
+          display: flex;
+          width: 80px;
+          height: 80px;
+          border-radius: 5px;
+          box-shadow:-30px -0px 1px #f0111173 ,
+            0px 30px 1px rgba(94,104,121,.288)
+            
+            ;
+         
+          background-color:aliceblue;
+          margin: auto;
         }
         </style>
 </head>
@@ -174,6 +197,14 @@
       <img src="image/1.png" alt="">
     </div>
 
+<br><br>
+<div class="parent">
+    
+  <div class="shade"></div>
+  <div class="shade"></div>
+  <div class="shade"></div>
+  <div class="shade"></div>
+</div>
 <br><br>
 </body>
 </html>

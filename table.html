@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+<style>
+    *{
+        padding: 0;margin: 0;
+    }
+table
+{
+    height: 100px;
+    width: 400px;
+    margin: 80px auto;
+}
+
+table,tr,td,th
+{
+    border: 3px solid ;
+    border-collapse:collapse;
+    
+}
+tr,td
+{
+    padding: 20px;
+}
+td
+{
+    text-align:center;
+}
+
+/*1. colgroup-column biased-class name of heading of the column
+2.nth child-row biased
+*/
+.Sr
+{
+    background-color: rgb(110, 236, 110);
+}
+.course
+{
+    background-color: rgb(23, 125, 221);
+}
+
+.Status
+{
+    background-color: rgb(110, 179, 110);
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: white;
+}
+h1
+{
+    position: relative;
+   text-transform: uppercase;
+  text-align: center;
+  top: 60px;
+   
+}
+</style>
+
+</head>
+
+<body>
+    <h1>table-of-course</h1>
+<table> 
+
+<colgroup class="Sr"></colgroup>
+<colgroup class="course"></colgroup>
+<colgroup class="Status"></colgroup>
+
+<thead>
+    <tr>
+        <th>Sr</th>
+        <th>course</th>
+        <th>Status</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>1.</td>
+    <td>introduction to html</td>
+    <td>Delivered</td>
+</tr>
+
+<tr>
+    <td>2.</td>
+    <td>introduction to css</td>
+    <td>Delivered</td>
+</tr>
+
+<tr>
+    <td>3.</td>
+    <td>introduction to animation</td>
+    <td>pending</td>
+</tr>
+
+<tr>
+    <td>4.</td>
+    <td>introduction to transformation</td>
+    <td>pending</td>
+</tr>
+</tbody>
+</table>    
+</body>
+</html>
+
+
+<!-- sementic tag 
+1.
+
+-->

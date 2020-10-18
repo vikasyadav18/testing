@@ -7,7 +7,7 @@
     <style>
         #first
         {
-            position: fixed;
+            position: relative;
             /* top:0; */
             /* bottom: 0; */
             display: flex;
@@ -75,10 +75,10 @@
             /* list-style-image: url("image/bullet.png"); */
         }
         
-        #Unordered
+        /* #Unordered
         {
             list-style-type:square;
-        }
+        } */
 
         ul
         {
@@ -89,7 +89,12 @@
         {
             list-style-type:square;
         }
-       
+       #orderlist li
+       {
+           color: rgb(25, 0, 255);
+       }
+
+
     </style>
 
 </head>
@@ -122,7 +127,7 @@
     </ol>
     
     <h1>ordered list</h1>
-    <ol start="5">
+    <ol start="5" id="orderlist">
         <li>vikas</li>
         <li>yadav</li>
         <li>vikas</li>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Dialog Box</title>
+    
+    
+</head>
+<body>
+    <!-- 
+        3 types of dialog boxes 
+  
+        1.alert 
+        2.prompt (input from user)
+        3.confirm (true:OK  or  false:cancel)
+     -->
+
+    <div id="box"></div>
+    <button id="btn1" onclick="alert('I am Alert box')">Alert Box!</button>
+    <script>
+        var x=document.getElementById('box');
+        var y=document.getElementById('btn1');
+
+        //console.log(x);
+        x.style.height='200px';
+        x.style.width='200px';
+        x.style.backgroundColor='skyblue';
+        x.style.marginBottom='20px';
+    
+    </script>
+    
+    <input type="button" value="prompt box" id="btn2">
+    <script>
+        var pb=document.getElementById('btn2');
+        pb.onclick=function()
+        {
+            var pval=prompt('type name');
+            // alert(pval);
+            if(pval=="")
+            {
+                alert('no Input');
+            }
+            if (pval == null)
+                {
+                    alert('are you sure want to cancel');
+                }
+            else
+            {
+                alert(' Input is accepted ');
+            }
+
+        }
+
+
+    </script>
+
+
+    <input type="button" value="confirm Box" id="btn3">
+    <script>
+        var z=document.getElementById('btn3');
+
+        z.onclick=function()
+        {
+       var val=confirm('I am confirm box');
+        alert(val);
+        }
+    </script>
+    
+
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla eligendi reprehenderit quaerat porro blanditiis voluptatem ratione laborum. Nihil, id quidem? In odio aliquid optio maxime aliquam magnam dignissimos consectetur earum qui voluptates, at eveniet nulla. Atque vitae corrupti voluptate minima magnam possimus nisi tenetur consequatur, pariatur iure ducimus dolor nemo numquam facilis eaque quod, saepe dicta veniam velit doloribus fugit quas hic non! Dolores voluptates doloremque quo suscipit vel dignissimos voluptatum eveniet consequuntur, excepturi nobis laboriosam veniam debitis deserunt ratione numquam ipsa exercitationem nihil dolorem deleniti fuga aperiam vitae eos quaerat dolor? Voluptatibus alias et enim, vel quo sed.</p>
+
+</body>
+</html>
+
+<noscript>
+please enable your javascript.
+</noscript>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changement of bracket</title>
+</head>
+<body>
+
+    <div id="box"></div>
+    
+    <button onclick="color()">Switch!</button>
+    <script>
+    var box =document.getElementById('box');
+        box.style.width='200px';
+        box.style.height='200px';
+        box.style.backgroundColor='green';
+        box.style.marginBottom='20px';
+        
+        function color()
+        {
+            var co = prompt('enter color');
+            box.style.backgroundColor=co;
+            
+        }
+
+    </script>
+
+
+</body>
+</html>

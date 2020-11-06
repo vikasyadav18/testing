@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT LISTNER</title>
+</head>
+<body>
+
+    <!-- Event handlers
+
+    note =they are catagorised on the basis of the "way callng function";
+
+    1.html event handler
+    2.Dom level 1
+    3.Dom level 2
+    -->
+
+    <!-- 1.html event handler -->
+    <input type="button" value="html event handler" onclick="fun()">
+    <script>
+        function fun()
+        {
+            document.write("I am html event handler ");
+        }
+    </script>
+
+<!-- 1.Dom level-1 event handler -->
+
+    <button id="d1">Dom level 1</button>
+    <script>
+        var ob=document.querySelector('#d1');
+        ob.onclick=function()
+        {
+           alert('i am Dom level 1') ;
+        }
+
+    </script>
+
+
+<!-- 1.Dom level-2 event handler -->
+<!-- Two types of of EventListener  we used 
+    1-addEventListener
+    2-removeEventListener  
+
+        -----------Syntax-----------
+     element.addEventListener(event, listener);
+
+     here in the parenthesis------
+     event - is any event name like 'click' or 'mouseover'
+     listener - is function name whome to call
+
+-->
+
+
+<button id="d2">Dom level 2</button>
+
+<script>
+var btn=document.querySelector('#d2');
+
+
+ function fn() 
+{
+    alert('Dom level 2');
+}
+
+
+btn.addEventListener('click',fn);
+
+// btn.removeEventListener('click',fn);
+
+
+</script>
+
+</body>
+</html>

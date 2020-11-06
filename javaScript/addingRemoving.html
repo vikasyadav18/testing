@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Removing</title>
+</head>
+<body>
+    <!-- what to do?
+        1. accessing as a list[0] 
+        2.accessing using id,className,querySelector
+        3.do some operation 
+
+        4.Get and Update Element Content
+        -textContent
+        -innerContent
+        -innerHTML
+
+        5.Adding / removing HTML Content
+
+        A-the three steps to add element
+        -createElement()
+        -createTextNode()
+        -appendChild()
+        
+        B-To remove an element , the steps are as follows
+        · Store the element you want to remove in a variable.
+
+        · Store the parent of that element in another variable.
+
+        · Remove the element from its containing element using the removeChild() method.
+    
+    -->
+
+
+    <div class="container">
+
+        <h1>1st Vikas yadav </h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</p>
+
+        <ul class="list">
+            <li class="man">one</li>
+            <li class="man">two</li>
+            <li class="man">three</li>
+
+        </ul>
+
+    </div>
+    <div class="container">
+
+        <h1>2nd Vikas yadav </h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</p>
+
+        <ul class="list">
+            <li class="man">four</li>
+            <li class="man">five</li>
+            <li class="man">six</li>
+
+        </ul>
+
+    </div>
+
+    <script>
+
+
+        var ls=document.querySelectorAll('.container');
+        //ls[0].firstElementChild.style.color="red";
+        ls[0].lastElementChild.style.color="red";
+        
+        //console.log(ls[0].lastElementChild.innerHTML);
+        //console.log(ls[0].firstElementChild.innerHTML);
+
+        ls[0].firstElementChild.innerHTML="1st Vikas ahir";
+
+        // 5.Adding / removing HTML Content-----------------
+
+        var newbtn=document.createElement('button');
+        newbtn.id="bt";
+        var namebtn=document.createTextNode('click me!');
+        newbtn.appendChild(namebtn);
+        ls[0].appendChild(newbtn);
+        
+        // you can use id or the object of element----
+        var bt=document.getElementById('bt');
+        bt.style.backgroundColor="yellow";
+        bt.style.color="red";
+        bt.style.border="none";
+
+        var newp=document.createElement('p');
+        var textp=document.createTextNode('I am newly created paragraph');
+       
+        // using object of Element----------
+        newp.style.color="blue";
+
+        newp.appendChild(textp);
+        ls[1].appendChild(newp);
+
+
+        //Removing element ----------
+
+        //1st way---
+
+//       newp.innerHTML="";
+
+       //2nd way----
+
+//       ls[1].removeChild(newp);
+
+
+        
+
+
+    </script>
+
+</body>
+</html>

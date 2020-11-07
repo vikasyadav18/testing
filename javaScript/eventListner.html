@@ -30,7 +30,9 @@
     <button id="d1">Dom level 1</button>
     <script>
         var ob=document.querySelector('#d1');
-        ob.onclick=function()
+        ob.onclick=domlevel1;
+
+        function domlevel1()
         {
            alert('i am Dom level 1') ;
         }

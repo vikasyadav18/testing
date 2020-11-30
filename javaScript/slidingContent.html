@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Content</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+
+        body
+        {
+            background-color: antiquewhite;
+        }
+        #container1
+        {
+            position: absolute;
+            display: block;
+            margin-top:10rem;
+            margin-bottom: auto;
+            left: 25rem;
+            margin-right: auto;
+            width: 250px;
+            height: 400px;
+            background-color: white;
+            padding: 20px;
+        }
+        #container2
+        {
+            position: absolute;
+            display: block;
+            margin-top:10rem;
+            margin-bottom: auto;
+            left: 50rem;
+            margin-right: auto;
+            width: 250px;
+            height: 400px;
+            background-color: transparent;
+            padding: 20px;
+            visibility: hidden;
+        }
+        h1
+        {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .mail,.pass1,.pass2
+        {
+            margin: 10px 0px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+            width: 100%;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div id="container1">
+    <h1>User detail</h1>
+    <input class="mail" type="text" placeholder="Email">
+    <input class="pass1" type="password" placeholder="password">
+    <input class="pass2" type="password" placeholder="confirm password">
+  
+    <br>
+    <button id="next">Next</button>
+</div>
+
+<div id="container2">
+    <h1>company detail</h1>
+
+    <input class="mail" type="text" placeholder="Email">
+    <input class="pass1" type="password" placeholder="password">
+    <input class="pass2" type="password" placeholder="confirm password">
+    <br>
+    <button id="back">back</button>
+</div>
+
+
+<script>
+    //selector
+var next=document.getElementById("next");
+var back=document.getElementById("back");
+var container1=document.getElementById("container1");
+var container2=document.getElementById("container2");
+
+
+    //event handeler
+
+
+    //fuction
+next.onclick=function()
+{
+    
+   container1.style.left="10rem";
+   container2.style.left="25rem";
+   container1.style.visibility="hidden";
+   container2.style.visibility="visible";
+   container2.style.backgroundColor="white";
+   container2.style.transition=".2s";
+  
+   
+
+}
+back.onclick=function()
+{
+   
+   
+    container1.style.left="25rem";
+   container2.style.left="50rem";
+   container2.style.visibility="hidden";
+   container1.style.visibility="visible";
+   container1.style.backgroundColor="white";
+   container1.style.transition=".2s";
+}
+
+
+</script>
+    
+</body>
+</html>

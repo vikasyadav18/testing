@@ -106,34 +106,29 @@
           background-color:aliceblue;
           margin: auto;
         }
-
-       
-        .sideCutter
+        .centerItem h1,p
         {
+          flex-direction: row;
           
-          width: 150px;
-          height: 30px;
-          text-align: center;
-          line-height: 30px;
-          background-color: blueviolet;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 20rem;
-         
         }
-        .sideCutter::after
+        .centerItem
         {
-          content: '';
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          right: -20px;
-          border-bottom: 20px solid transparent;
-          border-top: 20px solid transparent;
-          border-left: 20px solid transparent;
-
+          background-color: aqua;
+          width: 600px;
+          height: 500px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
         }
-
+       .headCenter
+       {
+        display: flex;
+          justify-content: center;
+          align-items: center;
+          
+       }
+      
         </style>
 </head>
 <body background-image:url('image\planet.jpg')>
@@ -235,10 +230,42 @@
   <div class="shade"></div>
 </div>
 <br><br>
+<div class="headCenter">
+  <div class="centerItem">
+    <h1>it is a center of this div</h1>
+   
+    <!-- <img src="image/2.png" alt=""> -->
+    <p>vikas yadav</p>
+    <button >click</button>
 
-<div class="sideCutter">
-  sideCutter
+  </div>
 </div>
+<marquee behavior="scroll" direction="right"><img src="image/html.png" alt=""></marquee>
+<marquee behavior="scroll" direction="left"><a href="#" title="bootstrap"><img src="image/bootstrap-1.jpg" alt=""></a></marquee>
+
+
+
+<br><br>
+<label for="form-fave">What is your favourite 80s Band?</label>
+  <select name="EightiesFave" id="form-fave" size="1">
+        <option>The Cure</option>
+        <option>Cocteau Twins</option>
+        <option>Tears for Fears</option>
+        <option>Thompson Twins</option>
+        <option>Everything But the Girl</option>
+        <option>Depeche Mode</option>
+        <option>The Smiths</option>
+        <option>New Order</option>
+  </select> 
+<br><br><br><br><br><br><br><br>
+
+<script>
+ for(var i=0;i<10;i++)
+  {
+       setTimeout(function()  {console.log(i);},i*1000);
+  }
+</script>
+
 
 </body>
 </html>
